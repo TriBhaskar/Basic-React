@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { CORE_CONCEPTS } from "./data";
 import Header from "./components/Header/Header.jsx";
 import Coreconcepts from "./components/Coreconcepts.jsx";
@@ -13,7 +13,8 @@ function App() {
     //console.log(selectedTopic);
   }
   return (
-    <div>
+    //Fragment (<>)component from react helps to combine multiple child or components inside a function (replacement for Div)
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -74,7 +75,7 @@ function App() {
           )}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
